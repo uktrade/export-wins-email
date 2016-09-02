@@ -1,0 +1,61 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{subject}}</title>
+  </head>
+  <body>
+    <!-- <style> -->
+    <span class="preheader">{{description}}</span>
+    <container class="header">
+      <row class="first-row">
+        <columns small="12" large="6">
+          <img class="logo" src="https://www.exportwins.ukti.gov.uk/static/ui/img/dit-logo.png" alt="Department for International Trade" width="200" height="94" />
+        </columns>
+      </row>
+    </container>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}}
+            {{> body}}
+          </center>
+        </td>
+      </tr>
+    </table>
+    <container class="footer-separator">
+      <row>
+        <columns small="12" large="12">
+        </columns>
+      </row>
+    </container>
+    <container class="footer">
+      <row>
+        <columns small="12" large="12" class="footer-content">
+          <a href="https://www.gov.uk/ukti">www.gov.uk/dit</a>
+
+          <p class="footer-text">
+            Department for International Trade is the Government Department that helps UK-based companies succeed globally and assists overseas companies to bring investment to the UK.
+          </p>
+        </columns>
+      </row>
+    </container>
+    <container class="eig">
+      <row>
+        <columns small="12" large="12">
+          <img class="float-right" src="https://www.exportwins.ukti.gov.uk/static/ui/img/exporting-is-great-logo_200.png" alt="Exporting is Great" width="196" height="100" />
+        </columns>
+      </row>
+    </container>
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
+

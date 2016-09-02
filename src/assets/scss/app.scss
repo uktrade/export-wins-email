@@ -1,0 +1,39 @@
+@import 'settings';
+@import 'foundation-emails';
+
+.header {
+	border-top: 5px solid $brand-color;
+}
+
+.first-row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.logo {
+	width: 200px;
+}
+
+.for-attention {
+	margin-bottom: 40px;
+}
+
+.review-win {
+	margin: 30px 0;
+}
+
+.footer-separator {
+	border-top: 3px solid $medium-gray;
+}
+
+.footer-text {
+	color: $dark-gray;
+	font-size: 12px;
+	padding-top: 10px;
+}
+
+.link-not-working {
+	padding-top: 10px;
+	font-size: 12px;
+	color: $dark-gray;
+}
