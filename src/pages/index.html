@@ -4,42 +4,47 @@ subject: My Email Subject
 <container>
   <row>
     <columns small="12" large="12">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit totam quasi ab aliquam saepe non fugiat laborum, veniam corporis alias impedit est nesciunt. Provident numquam cum libero vero minus fuga.</p>
+
+      <p class="for-attention">For attention of: \{{win.customer_name|title}}, \{{win.customer_company|title}}</p>
+
+      <p>Congratulations on winning business in \{{win.country.name}}.</p>
+
+      <p>
+        We’d like your opinion on the support we gave you to achieve this win.
+      </p>
+      <p>
+        Getting feedback from all the businesses we’ve helped enables us to assess the impact of the work we do and to ensure UK taxpayers money is spent effectively. 
+      </p>
+      <p>
+        Please give your feedback by completing this 5-minute survey:
+      </p>
     </columns>
   </row>
-  <row class="collapse">
+
+  <row>
     <columns small="12" large="12">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit totam quasi ab aliquam saepe non fugiat laborum, veniam corporis alias impedit est nesciunt. Provident numquam cum libero vero minus fuga.</p>
+      <button href="\{{ url }}" class="review-button">Start survey &gt;</button>
+
+      <p class="link-not-working">
+        If the link above doesn't work, please copy and paste this url into your browser: \{{ url }}
+      </p>
     </columns>
   </row>
+
   <row>
-    <columns small="12" large="6">
-      <p>One Word</p>
-    </columns>
-    <columns small="12" large="6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure perferendis praesentium quia distinctio, assumenda dolor pariatur! Dolore perspiciatis ratione consequuntur obcaecati cumque molestias, corporis fugiat blanditiis, sit nisi deleniti beatae?</p>
-    </columns>
-  </row>
-  <row>
-    <columns small="12" large="2">
-      <p>One word</p>
-    </columns>
-    <columns small="12" large="4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus velit eveniet est odit doloribus minus, reprehenderit vitae excepturi numquam repellendus natus consectetur dolorem. Quam, voluptatem non aperiam rem voluptas sequi?</p>
-    </columns>
-    <columns small="12" large="6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus velit eveniet est odit doloribus minus, reprehenderit vitae excepturi numquam repellendus natus consectetur dolorem. Quam, voluptatem non aperiam rem voluptas sequi?</p>
-    </columns>
-  </row>
-  <row>
-    <columns small="12" large="2">
-      <p>One Word</p>
-    </columns>
-    <columns small="4" large="4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga repellendus velit aut perferendis, eveniet delectus maxime quisquam recusandae assumenda culpa tenetur dolorem error voluptatibus. Animi accusamus molestiae placeat, sequi beatae.</p>
-    </columns>
-    <columns small="8" large="6">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quis obcaecati facere dolore laborum officia rem praesentium cumque culpa delectus alias ullam ad, doloremque, ipsa asperiores ex sit necessitatibus minima!</p>
+    <columns small="12" large="12">
+      <p>Many thanks and best of luck for further exporting success,</p>
+
+      <p>
+        The Export Wins team, Department for International Trade<br>
+        <a href="https://www.gov.uk/dit">https://www.gov.uk/dit</a>
+      </p>
+
+      <p>
+        on behalf of: \{{win.lead_officer_name|safe}}<br>
+        \{{win.get_hq_team_display|safe}}<br>
+        \{{win.lead_officer_email_address|default:win.user.email}}
+      </p>
     </columns>
   </row>
 </container>
