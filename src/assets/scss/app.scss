@@ -1,6 +1,12 @@
 @import 'settings';
 @import 'foundation-emails';
 
+html,
+body,
+table.body {
+	background-color: #fff;
+}
+
 .header {
 	border-top: 5px solid $brand-color;
 }
@@ -24,6 +30,11 @@
 
 .footer-separator {
 	border-top: 3px solid $medium-gray;
+}
+
+.eig img {
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .footer-text {

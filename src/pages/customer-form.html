@@ -5,9 +5,9 @@ subject: My Email Subject
 	<row>
 		<columns small="12" large="12">
 
-			<p class="for-attention">For attention of: win.customer_name|title</p>
+			<p class="for-attention">For attention of: \{{win.customer_name|title}}</p>
 
-			<p>I'm delighted to hear of your recent export business success in win.country.name.</p>
+			<p>I'm delighted to hear of your recent export business success in \{{win.country.name}}.</p>
 
 			<p>It's been a privilege to work with you on this. As part of my role, I have to report on the service I've provided to customers like you.  Could I ask you to confirm details of your success by clicking on the link below?  It should only take a couple minutes of your time and I'd really appreciate your help.</p>
 		</columns>
@@ -15,10 +15,10 @@ subject: My Email Subject
 
 	<row>
 		<columns small="12" large="12">
-			<button href=" url " class="review-button">Review win</button>
+			<button href="\{{ url }}" class="review-button">Review win</button>
 
 			<p class="link-not-working">
-				If the link above doesn't work, please copy and paste this url into your browser: url
+				If the link above doesn't work, please copy and paste this url into your browser: \{{ url }}
 			</p>
 		</columns>
 	</row>
@@ -28,9 +28,9 @@ subject: My Email Subject
 			<p>Best regards</p>
 
 			<p>
-				win.lead_officer_name|safe<br>
-				win.get_hq_team_display|safe<br>
-				win.lead_officer_email_address|default:win.user.email
+				\{{win.lead_officer_name|safe}}<br>
+				\{{win.get_hq_team_display|safe}}<br>
+				\{{win.lead_officer_email_address|default:win.user.email}}
 			</p>
 		</columns>
 	</row>
