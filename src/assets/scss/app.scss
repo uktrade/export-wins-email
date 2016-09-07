@@ -7,38 +7,37 @@ table.body {
 	background-color: #fff;
 }
 
-.header {
-	border-top: 5px solid $brand-color;
+body,
+body p {
+	font-size: 20px;
 }
 
-.first-row {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.logo {
-	width: 200px;
+@media only screen and (min-width: #{$global-breakpoint}) {
+	
+	body,
+	body p {
+		font-size: 16px;
+	}
 }
 
 p {
 	margin-bottom: 20px;
 }
 
-.for-attention {
-	margin-bottom: 40px;
+.bold {
+	font-weight: bold;
 }
 
-.review-win {
-	margin: 30px 0;
+.header {
+	border-top: 5px solid $brand-color;
+}
+
+.logo {
+	width: 200px;
 }
 
 .footer-separator {
 	border-top: 3px solid $medium-gray;
-}
-
-.eig img {
-	margin-top: 20px;
-	margin-bottom: 10px;
 }
 
 .footer-text {
@@ -47,8 +46,10 @@ p {
 	padding-top: 10px;
 }
 
+/*
 .link-not-working {
 	padding-top: 10px;
 	font-size: 12px;
 	color: $dark-gray;
 }
+*/
